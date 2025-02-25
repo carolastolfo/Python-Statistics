@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+
+majors = ['Accounting', 'Economics', 'Management']  # TO DO
+frequencies = [130, 20, 50]  # TO DO
+
+bar_graph = plt.figure('Bar Graph')
+plt.bar(majors, frequencies, edgecolor='black')
+plt.title('Bar Graph')
+bar_graph.savefig('bar_graph.png', format='png', dpi=1200)
+
+pie_chart = plt.figure('Pie Chart')
+plt.pie(frequencies, labels=majors, autopct='%1.0f%%')
+plt.title('Pie Chart')
+pie_chart.savefig('pie_chart.png', format='png', dpi=1200)
+
+plt.show()

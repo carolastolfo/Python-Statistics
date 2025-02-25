@@ -1,0 +1,14 @@
+import pandas as pd
+import numpy as np
+from scipy import stats
+
+data = [4020,3200,2200,3700,2800]
+range_ = np.max(data) - np.min(data)
+var_ = np.var(data, ddof=1)
+std_dev_ = np.std(data, ddof=1)
+
+print('rage =', range_)
+print('var =', var_)
+print('std dev =', std_dev_)
+
+print('\n>>> END <<<')
